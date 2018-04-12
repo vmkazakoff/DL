@@ -464,7 +464,7 @@ textarea {
   position: relative;
 }
 #form-search ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.4);
   opacity: 0.5;
 }
 #form-search :-moz-placeholder {
@@ -483,7 +483,7 @@ textarea {
   padding: 8px 35px 8px 10px;
   font-size: 14px;
   font-style: italic;
-  background-color: #fefefe;
+  background-color: #ddd;
   border: none;
 }
 #form-search .submit-container {
@@ -599,19 +599,20 @@ textarea {
 }
 #menu {
   position: fixed;
-  top: 70px;
-  left: 70px;
-  bottom: 70px;
-  width: 225px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 325px;
   overflow-y: scroll;
   font-size: 14px;
   color: #898989;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
   z-index: 3000;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  box-shadow: 5px 0 5px -5px #333;
 }
 #menu .logo-container {
   padding: 30px;
@@ -5152,9 +5153,9 @@ textarea {
 }
 @media (max-width: 1399px) {
   #menu {
-    top: 30px;
-    left: 30px;
-    bottom: 30px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
   }
   .citation {
     margin: 30px 50px;
@@ -5218,12 +5219,12 @@ textarea {
 }
 @media (max-width: 1199px) {
   #menu {
-    left: -225px;
-    top: 70px;
-    background-color: rgba(255, 255, 255, 0.8);
+    left: -325px;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
   }
   #menu.active {
-    left: 30px;
+    left: 0px;
   }
   #menu-trigger {
     display: block;
