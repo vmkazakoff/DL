@@ -216,9 +216,11 @@
 		<article class="col-xs-12 portfolio-item filter-people">
 			
 		    	<div class="portfolio-item-content">
+		    		
 		    		<a data-toggle="collapse" href="#collapse{{rowNumber}}" role="button" aria-expanded="false" aria-controls="collapseExample" class="collapcelink collapsed">
-		            	<p><span class="collapseicon"></span> {{{title}}}</p> 
+		            	<p><span class="collapseicon pull-right"></span> {{{title}}}</p> 
 		            </a>
+
 
 					<div class="collapse" id="collapse{{rowNumber}}">
 					  <div class="card card-body">
@@ -228,9 +230,10 @@
 					</div>
 
 		            <br/>
-			    
-			    {{#tags}}<a class="dltag isotope-filter" data-filter=".{{tag}}" href="#"> {{tag}} </a> {{/tags}}
-			    <span class="dltag text-muted pull-right">{{date}}</span>
+		            <span class="dltag tlgrmbutton pull-right">{{date}}</span>
+		            <a class="dltag tlgrmbutton" href="{{url}}"><i class="fa fa-paper-plane" aria-hidden="true"></i> Открыть в telegram</a> 
+		            {{#tags}}<a class="dltag isotope-filter" data-filter=".{{tag}}" href="#"> {{tag}} </a> {{/tags}}
+
 
 		        </div>
 	    	

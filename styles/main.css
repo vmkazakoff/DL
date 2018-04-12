@@ -56,12 +56,12 @@ a.collapcelink {
 .collapcelink .collapseicon:after {
     /* symbol for "opening" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    content: "\e253";    /* adjust as needed, taken from bootstrap.css */
     color: #00ffcc;         /* adjust as needed */
 }
 .collapcelink.collapsed .collapseicon:after {
     /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    content: "\e252";    /* adjust as needed, taken from bootstrap.css */
 }
 
 address {
@@ -910,8 +910,7 @@ textarea {
   margin-top: 50px;
 }
 #section-intro {
-  /*background-image: url('../images/backgrounds/bg1.jpg');*/
-  background: linear-gradient(to right, #303,#606);
+  background-image: url('../images/backgrounds/bg1.jpg');
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6065,7 +6064,11 @@ textarea {
   padding: 5px;
   border-top: 1px solid #00ffdd
 }
-
+.tlgrmbutton {
+  color: #fff !important;
+  font-size: .7em;
+  font-weight: 100;
+}
 
 .modal-backdrop.in {
     filter: alpha(opacity=70);
