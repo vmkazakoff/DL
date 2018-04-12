@@ -120,7 +120,7 @@
         	<div class="menu-container">
             	<div class="menu-inner">
             		<div class="logo-container">
-                        <h5 style="color: #00ffcc;">Digital Learning</h5>
+                        <h5 style="color: #323332;">Digital Learning</h5>
                     </div>
 
                     <div class="menu-content">
@@ -218,7 +218,7 @@
 		    	<div class="portfolio-item-content">
 		    		
 		    		<a data-toggle="collapse" href="#collapse{{rowNumber}}" role="button" aria-expanded="false" aria-controls="collapseExample" class="collapcelink collapsed">
-		            	<p><span class="collapseicon pull-right"></span> {{{title}}}</p> 
+		            	<p><span class="collapseicon"></span> {{{title}}}</p> 
 		            </a>
 
 
@@ -230,10 +230,10 @@
 					</div>
 
 		            <br/>
-		            <span class="dltag tlgrmbutton pull-right">{{date}}</span>
-		            <a class="dltag tlgrmbutton" href="{{url}}"><i class="fa fa-paper-plane" aria-hidden="true"></i> Открыть в telegram</a> 
+		            
+		            <a class="dltag" href="{{url}}"><i class="fa fa-paper-plane" aria-hidden="true"></i> <b>Открыть в telegram</b></a> 
 		            {{#tags}}<a class="dltag isotope-filter" data-filter=".{{tag}}" href="#"> {{tag}} </a> {{/tags}}
-
+		            <span class="dltag tlgrmbutton pull-right">{{date}}</span>
 
 		        </div>
 	    	
