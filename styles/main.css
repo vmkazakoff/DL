@@ -666,7 +666,8 @@ textarea {
   right: 20px;
   border-radius: 100%;
   display: none;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
   cursor: pointer;
   z-index: 3100;
   -webkit-transition: all 0.2s ease-out;
@@ -5226,7 +5227,8 @@ textarea {
   }
   #menu-trigger {
     display: block;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
   }
   #menu-trigger.active {
     /*top: 30px;
