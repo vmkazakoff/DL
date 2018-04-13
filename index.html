@@ -242,6 +242,11 @@
 	</script>
 
   <script>
+
+	$('.portfolio-item a').click(function(event){
+	    event.stopImmediatePropagation();
+	});
+
     document.addEventListener('DOMContentLoaded', function() {
       	var URL = "1R9CHdBpKsF9HJWFLw6nOM82PmsdAwz0QZRPmxFPXHfg"
       	Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
