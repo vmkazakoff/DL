@@ -293,8 +293,8 @@
 				$(event.target).parent().addClass('active');
                 var menu = $('#menu');
                 var menu_trigger = $('#menu-trigger');
-                menu.toggleClass('active');
-                menu_trigger.toggleClass('active');
+                menu.removeClass('active');
+                menu_trigger.removeClass('active');
                 setTimeout(function(){window.scrollTo(0,document.querySelector("#portfolio2").scrollHeight);},0);
 
 	        var main_menu_scroll_el = $("#menu");
