@@ -16,7 +16,7 @@
       gtag('config', 'UA-117856597-1');
     </script>
 
-    
+
 	<meta charset="utf-8">
     <!--[if lt IE 9]> 
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,10 +76,6 @@
     
     <script type="text/javascript" src="js/modernizr.min.js"></script>
     <script type="text/javascript" src="pace/pace.min.js"></script>
-
-    <script type="text/javascript">
-	window.scrollTo(0,1);
-	</script>
 
 </head>
 
@@ -295,6 +291,10 @@
 	        	var isotope_filter2_items = isotope_filter2_list.find('.isotope-filter');
 				isotope_filter2_items.parent().removeClass('active');
 				$(event.target).parent().addClass('active');
+                var menu = $('#menu');
+                var menu_trigger = $('#menu-trigger');
+                menu.toggleClass('active');
+                menu_trigger.toggleClass('active');
                 setTimeout(function(){window.scrollTo(0,document.querySelector("#portfolio2").scrollHeight);},0);
 
 	        var main_menu_scroll_el = $("#menu");
@@ -306,7 +306,7 @@
     setTimeout(function(){
 	    var main_menu_scroll_el = $("#menu");
 	    main_menu_scroll_el.getNiceScroll().resize();
-	},500);
+	},1500);
 
   </script>
 
