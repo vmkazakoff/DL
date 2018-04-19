@@ -243,10 +243,6 @@
 
   <script>
 
-	$('.portfolio-item a').click(function(event){
-	    event.stopImmediatePropagation();
-	});
-
     document.addEventListener('DOMContentLoaded', function() {
       	var URL = "1R9CHdBpKsF9HJWFLw6nOM82PmsdAwz0QZRPmxFPXHfg"
       	Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
@@ -256,26 +252,27 @@
     function showInfo(data) {
       var gData = separateTags(data);
       drawTags(gData);
-      Sheetsee.makeTable(gData.reverse(), "#portfolio2" );
-      Sheetsee.initiateTableFilter(gData, "#articleSearch", "#portfolio2")
+      Sheetsee.makeTable(gData, "#portfolio2" );
+      Sheetsee.initiateTableFilter(gData, "#articleSearch", "#portfolio2");
+      window.scrollTo(0,document.querySelector("#portfolio2").scrollHeight);
       
-	      //Sheetsee.initiateTableFilter(gData, "#articleSearch", "#portfolio2")
 	       $(document).on("click", ".isotope-filter", function(event){
-	        var tag = $(event.target).text()
+	        var tag = $(event.target).text();
 	        if (tag == "All") {
-	        	Sheetsee.makeTable(gData.reverse(), "#portfolio2" );
+	        	Sheetsee.makeTable(gData, "#portfolio2" );
 	        } else {
-		        var tagFilter = getTagMatches(gData, tag)
-		        Sheetsee.makeTable(tagFilter.reverse(), "#portfolio2")
+		        var tagFilter = getTagMatches(gData, tag);
+		        Sheetsee.makeTable(tagFilter, "#portfolio2");
+                setTimeout(function(){window.scrollTo(0,document.querySelector("#portfolio2").scrollHeight);},0);
 		    }
 	        	var isotope_filter2_list = $('#isotope-filter-list2');
 	        	var isotope_filter2_items = isotope_filter2_list.find('.isotope-filter');
 				isotope_filter2_items.parent().removeClass('active');
 				$(event.target).parent().addClass('active');
+                setTimeout(function(){window.scrollTo(0,document.querySelector("#portfolio2").scrollHeight);},0);
 
 	        var main_menu_scroll_el = $("#menu");
 	    	main_menu_scroll_el.getNiceScroll().resize();
-
 	      }) 
 
     }
@@ -283,7 +280,7 @@
     setTimeout(function(){
 	    var main_menu_scroll_el = $("#menu");
 	    main_menu_scroll_el.getNiceScroll().resize();
-	},1500);
+	},500);
 
   </script>
 
